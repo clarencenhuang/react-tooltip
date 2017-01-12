@@ -1,50 +1,64 @@
 {
-  "name": "react-tooltip",
-  "version": "3.2.2",
-  "description": "react tooltip component",
-  "main": "dist/index.js",
-  "scripts": {
-    "test": "make test",
-    "start": "make dev",
-    "deploy": "make deploy"
-  },
-  "standard": {
-    "parser": "babel-eslint",
-    "ignore": [
-      "dist/",
-      "standalone/",
-      "src/style.js",
-      "src/style.css",
-      "example/"
+  "_args": [
+    [
+      {
+        "raw": "react-tooltip@^3.2.1",
+        "scope": null,
+        "escapedName": "react-tooltip",
+        "name": "react-tooltip",
+        "rawSpec": "^3.2.1",
+        "spec": ">=3.2.1 <4.0.0",
+        "type": "range"
+      },
+      "/Users/nhuang/Documents/Intuit/Open Platform/student-loan-orchestration/.build/OfferWidget"
     ]
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/wwayne/react-tooltip"
-  },
-  "keywords": [
-    "react",
-    "react-component",
-    "tooltip",
-    "react-tooltip"
   ],
-  "author": "wwayne",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/wwayne/react-tooltip/issues"
+  "_from": "react-tooltip@>=3.2.1 <4.0.0",
+  "_id": "react-tooltip@3.2.2",
+  "_inCache": true,
+  "_location": "/react-tooltip",
+  "_nodeVersion": "6.4.0",
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/react-tooltip-3.2.2.tgz_1479889463132_0.387417315505445"
   },
-  "homepage": "https://github.com/wwayne/react-tooltip",
+  "_npmUser": {
+    "name": "wwayne",
+    "email": "wayne.wang0821@gmail.com"
+  },
+  "_npmVersion": "3.10.3",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "react-tooltip@^3.2.1",
+    "scope": null,
+    "escapedName": "react-tooltip",
+    "name": "react-tooltip",
+    "rawSpec": "^3.2.1",
+    "spec": ">=3.2.1 <4.0.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.intuit.net/r/react-tooltip/_attachments/react-tooltip-3.2.2.tgz",
+  "_shasum": "3a599c0eabbd9eb9597aa2d72b217fd7ba358767",
+  "_shrinkwrap": null,
+  "_spec": "react-tooltip@^3.2.1",
+  "_where": "/Users/nhuang/Documents/Intuit/Open Platform/student-loan-orchestration/.build/OfferWidget",
+  "author": {
+    "name": "wwayne"
+  },
   "browserify-shim": {
     "react": "global:React",
     "react-dom": "global:ReactDOM"
   },
-  "peerDependencies": {
-    "react": "^0.14.0 || ^15.0.0",
-    "react-dom": "^0.14.0 || ^15.0.0"
+  "bugs": {
+    "url": "https://github.com/wwayne/react-tooltip/issues"
   },
   "dependencies": {
     "classnames": "^2.2.0"
   },
+  "description": "react tooltip component",
   "devDependencies": {
     "babel-cli": "^6.5.1",
     "babel-core": "^6.9.1",
@@ -71,5 +85,53 @@
     "standard": "^5.2.2",
     "uglifyjs": "^2.4.10",
     "watchify": "^3.2.1"
-  }
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "3a599c0eabbd9eb9597aa2d72b217fd7ba358767",
+    "tarball": "https://registry.npmjs.intuit.net/r/react-tooltip/_attachments/react-tooltip-3.2.2.tgz"
+  },
+  "gitHead": "1ebb058b32554ead681a26bd9e1e6d88378ce53a",
+  "homepage": "https://github.com/wwayne/react-tooltip",
+  "keywords": [
+    "react",
+    "react-component",
+    "tooltip",
+    "react-tooltip"
+  ],
+  "license": "MIT",
+  "main": "dist/index.js",
+  "maintainers": [
+    {
+      "name": "wwayne",
+      "email": "superxiao21@163.com"
+    }
+  ],
+  "name": "react-tooltip",
+  "optionalDependencies": {},
+  "peerDependencies": {
+    "react": "^0.14.0 || ^15.0.0",
+    "react-dom": "^0.14.0 || ^15.0.0"
+  },
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wwayne/react-tooltip.git"
+  },
+  "scripts": {
+    "deploy": "make deploy",
+    "start": "make dev",
+    "test": "make test"
+  },
+  "standard": {
+    "parser": "babel-eslint",
+    "ignore": [
+      "dist/",
+      "standalone/",
+      "src/style.js",
+      "src/style.css",
+      "example/"
+    ]
+  },
+  "version": "3.2.2"
 }

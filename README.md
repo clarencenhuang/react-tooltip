@@ -23,9 +23,8 @@ import ReactTooltip from 'react-tooltip'
 ```
 
 2 . Add data-tip = "your placeholder" to your element
-```jsx
-<p data-tip="hello world">Tooltip</p>
-```
+
+	<p data-tip="hello world">Tooltip</p>
 
 3 . Including react-tooltip component
 
@@ -114,7 +113,7 @@ import ReactTooltip from 'react-tooltip'
 The component was designed to set a `<Reactooltip />` one place then use tooltip everywhere, but a lot of people stuck in using this component with modal, you can check the discussion [here](https://github.com/wwayne/react-tooltip/issues/130), the summarization of solving the problem is as following:
 
 1. Put `<ReactTooltip />` out of the `<Modal>`
-2. Use `ReactTooltip.rebuild()` when opening the modal
+2. Use `React.rebuild()` when opening the modal
 3. If your modal's z-index happens to higher than the tooltip, use the attribute `class` to custom your tooltip's z-index
 
 >I suggest always put `<ReactTooltip />` in the Highest level or smart component of Redux, so you might need these static
@@ -123,14 +122,14 @@ method to control tooltip's behaviour in some situations
 ### 2. Hide tooltip when getContent returns undefined
 When you set `getContent={() => { return }}` you will find the tooltip will dispaly `true`, that's because React will set the value of data-* to be 'true' automatically if there is no value to be set. So you have to set `data-tip=''` in this situaction.
 
-```jsx
+```
 <p data-tip='' data-for='test'></p>
 <ReactTooltip id='test' getContent={() => { return null }}/>
 ```
 
 Same for empty children, if you don't want show the tooltip when the children is empty
 
-```jsx
+```
 <p data-tip='' data-for='test'></p>
 <ReactTooltip id='test'>{}</ReactTooltip>
 ```
